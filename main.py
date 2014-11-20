@@ -38,10 +38,10 @@ def r_to_d(raw):
             vals.push(NUMERALS[c])    
         except KeyError:
             print('\'{0}\' is not a valid Roman numeral.'.format(c))
-            return
+            return 0
             
     if vals.isEmpty():
-        return
+        return 0
         
     val = vals.pop()
     
