@@ -52,6 +52,15 @@ class RDTestCase(unittest.TestCase):
         self.assertEqual(1776, r_to_d('mdcclxxvi'))
         self.assertEqual(9, r_to_d('ix'))
         self.assertEqual(94, r_to_d('xciv'))
+        self.assertEqual(4, r_to_d('iv'))
+        self.assertEqual(34, r_to_d('XXXIV'))
+        self.assertEqual(267, r_to_d('CCLXVII'))
+        self.assertEqual(764, r_to_d('DCCLXIV'))
+        self.assertEqual(987, r_to_d('CMLXXXVII'))
+        self.assertEqual(1983, r_to_d('MCMLXXXIII'))
+        self.assertEqual(2014, r_to_d('MMXIV'))
+        self.assertEqual(4000, r_to_d('MMMM'))
+        self.assertEqual(4999, r_to_d('MMMMCMXCIX'))
     
 if __name__ == '__main__':
     unittest.main()
