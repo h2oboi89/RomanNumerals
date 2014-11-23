@@ -10,8 +10,8 @@ from main import r_to_d
 class RDTestCase(unittest.TestCase):
     def test_fail(self):
         self.assertEqual(0, r_to_d(''))
-        self.assertEqual(0, r_to_d('abc'))
-        self.assertEqual(0, r_to_d('xva'))
+        self.assertEqual(-1, r_to_d('abc'))
+        self.assertEqual(-1, r_to_d('xva'))
     
     def test_i(self):
         self.assertEqual(1, r_to_d('I'))
